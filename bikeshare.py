@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[22]:
-
 
 import time
 import pandas as pd
@@ -15,9 +10,6 @@ city_verification = ["Chicago", "New York", "Washington"]
 month_verification = ['January', 'February', 'March', 'April', 'May', 'June', 'All']
 day_verification = ['Monday', 'Tuesday','Wednesday', ' Thursday', 'Friday', 'All']
 Binary_condition = ['Yes', 'No']
-
-
-# In[25]:
 
 
 def load_data(city, month, day):
@@ -75,10 +67,6 @@ def load_data(city, month, day):
                     
     return df
 
-
-# In[26]:
-
-
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -113,9 +101,6 @@ def get_filters():
     return city, month, day
 
 
-# In[27]:
-
-
 def time_stats(day,month,df):
 
     """Displays statistics on the most frequent times of travel."""
@@ -142,9 +127,6 @@ def time_stats(day,month,df):
     print('-'*80)
 
 
-# In[28]:
-
-
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -159,16 +141,8 @@ def station_stats(df):
     popular_end_station = df['End Station'].mode()
     print('Most Frequent End Station:', popular_end_station.to_string(index=False))
     
-    # display most frequent combination of start station and end station trip
-    #popular_combination = df["station_combination"].mode()
-    #print('Most Frequent combination:', popular_combination.to_string(index=False))
-    
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
-
-# In[35]:
-
 
 
 def trip_duration_stats(df):
@@ -187,10 +161,6 @@ def trip_duration_stats(df):
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
-
-# In[36]:
-
 
 def user_stats(city,df):
     """Displays statistics on bikeshare users."""
@@ -227,30 +197,6 @@ def user_stats(city,df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
-# def main():
-#     while True:
-#         city, month, day = get_filters()
-#         df = load_data(city, month, day)
-#         time_stats(day,month,df)
-#         station_stats(df)
-#         trip_duration_stats(df)
-#         user_stats(df)
-#      
-#         restart = input('\nWould you like to restart? Enter yes or no.\n')
-#         if restart.lower() != 'yes':
-#             print("Thank you for your time! See you soon <3")
-#             break
-#         else:
-#             print("Uhuu here we go again!")
-# 
-# if __name__ == "__main__":
-# 	main()
-# 
-
-# In[37]:
-
-
 def main():
     while True:
         city, month, day = get_filters()
@@ -269,28 +215,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
