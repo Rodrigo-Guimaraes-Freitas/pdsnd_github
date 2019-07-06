@@ -1,4 +1,7 @@
 
+# Hello! feel free to use and understand this code! contact me
+# on github if you have any questions 
+
 import time
 import pandas as pd
 import numpy as np
