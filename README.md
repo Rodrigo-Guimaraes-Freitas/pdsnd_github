@@ -18,14 +18,8 @@ chicago.csv
 washington.csv
 new_york_city.csv
 
-
-Description
-A project developed for the Programming for Data Science Udacity nanodegree which interactively analyze data of a bikeshare company
-
-
 ### Credits
-Files used
-Credits
+
 https://stackoverflow.com/questions/16122234/how-to-commit-a-change-with-both-message-and-description-from-the-command-li
 
 https://git-scm.com/doc
