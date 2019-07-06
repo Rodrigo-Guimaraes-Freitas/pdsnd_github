@@ -228,29 +228,6 @@ def user_stats(city,df):
     print('-'*40)
 
 
-# def main():
-#     while True:
-#         city, month, day = get_filters()
-#         df = load_data(city, month, day)
-#         time_stats(day,month,df)
-#         station_stats(df)
-#         trip_duration_stats(df)
-#         user_stats(df)
-#      
-#         restart = input('\nWould you like to restart? Enter yes or no.\n')
-#         if restart.lower() != 'yes':
-#             print("Thank you for your time! See you soon <3")
-#             break
-#         else:
-#             print("Uhuu here we go again!")
-# 
-# if __name__ == "__main__":
-# 	main()
-# 
-
-# In[37]:
-
-
 def main():
     while True:
         city, month, day = get_filters()
@@ -262,35 +239,10 @@ def main():
      
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
-            print("Thank you for your time! See you soon <3")
+            print("Thank you for your time!")
             break
         else:
-            print("Uhuu here we go again!")
+            print("Here we go again!")
 
 if __name__ == "__main__":
 	main()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
